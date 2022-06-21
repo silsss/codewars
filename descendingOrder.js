@@ -18,7 +18,8 @@
 //   }
 
 function descendingOrder(n){
+  //first make it to string, then to array, then sort them, then reverse them, then join to make string again
     let str = String(n).split("").sort((a,b) => a-b).reverse().join('');
-    
+    //return as number
     return parseInt(str)
   }
